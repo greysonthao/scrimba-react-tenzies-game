@@ -3,30 +3,34 @@ import Die from "../src/components/Die";
 
 function App() {
   const [allDice, setAllDice] = React.useState(allNewDice());
+  console.log(allDice);
 
   function allNewDice() {
     let newDice = [];
+
     for (let i = 0; i < 10; i++) {
-      let randNum = Math.ceil(Math.random() * 6);
-      newDice.push(randNum);
+      let Dice = {
+        value: 0,
+        isHeld: false,
+      };
+      Dice.value = Math.ceil(Math.random() * 6);
+      newDice.push(Dice);
     }
     return newDice;
   }
 
+  const dieElements = allDice.map((dice) => <Die value={dice.value} />);
+
+  function reRoll() {
+    return setAllDice(allNewDice());
+  }
+
   return (
     <main className="main-container">
-      <div className="die-container">
-        <Die value={allDice[0]} />
-        <Die value={allDice[1]} />
-        <Die value={allDice[2]} />
-        <Die value={allDice[3]} />
-        <Die value={allDice[4]} />
-        <Die value={allDice[5]} />
-        <Die value={allDice[6]} />
-        <Die value={allDice[7]} />
-        <Die value={allDice[8]} />
-        <Die value={allDice[9]} />
-      </div>
+      <div className="die-container">{dieElements}</div>
+      <button className="roll-btn" onClick={reRoll}>
+        Roll
+      </button>
     </main>
   );
 }

@@ -6,12 +6,13 @@ body {
   margin: 0;
   background-color: #0b2434;
   padding: 30px;
+  font-family: "Karla", sans-serif;
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -44,4 +45,27 @@ body {
 
 .die-num {
   font-size: 2rem;
+}
+
+.roll-btn {
+  background: #5035ff;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+  border-radius: 3.81277px;
+  font-weight: 700;
+  font-size: 16.384px;
+  line-height: 19px;
+  color: #ffffff;
+  width: 92px;
+  height: 36px;
+  border: 0;
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+}
+
+.roll-btn:focus {
+  outline: none;
+}
+
+.roll-btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
