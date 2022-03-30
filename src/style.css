@@ -80,3 +80,11 @@ body {
   font-size: 40px;
   margin: 0;
 }
+
+.confetti-container {
+  force: 0.6;
+  duration: 5000;
+  particlecount: 200;
+  floorheight: 1600;
+  floorwidth: 1600;
+}
