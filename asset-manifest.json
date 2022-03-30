@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/scrimba-react-tenzies-game/static/css/main.87faa845.css",
+    "main.js": "/scrimba-react-tenzies-game/static/js/main.a687a34a.js",
+    "index.html": "/scrimba-react-tenzies-game/index.html",
+    "main.87faa845.css.map": "/scrimba-react-tenzies-game/static/css/main.87faa845.css.map",
+    "main.a687a34a.js.map": "/scrimba-react-tenzies-game/static/js/main.a687a34a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87faa845.css",
+    "static/js/main.a687a34a.js"
+  ]
+}
